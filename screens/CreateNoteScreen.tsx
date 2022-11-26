@@ -1,10 +1,9 @@
-import { StatusBar } from 'expo-status-bar';
-import { Platform, StyleSheet } from 'react-native';
+import { StatusBar } from 'expo-status-bar'
+import { Platform, StyleSheet } from 'react-native'
+import EditScreenInfo from '../components/EditScreenInfo'
+import { Text, View } from '../components/Themed'
 
-import EditScreenInfo from '../components/EditScreenInfo';
-import { Text, View } from '../components/Themed';
-
-export default function ModalScreen() {
+export default function CreateNoteScreen() {
   return (
     <View style={styles.container}>
       <Text style={styles.title}>Modal</Text>
@@ -14,7 +13,7 @@ export default function ModalScreen() {
       {/* Use a light status bar on iOS to account for the black space above the modal */}
       <StatusBar style={Platform.OS === 'ios' ? 'light' : 'auto'} />
     </View>
-  );
+  )
 }
 
 const styles = StyleSheet.create({
@@ -32,4 +31,4 @@ const styles = StyleSheet.create({
     height: 1,
     width: '80%',
   },
-});
+})
