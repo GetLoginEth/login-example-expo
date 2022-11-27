@@ -2,7 +2,7 @@
   "expo": {
     "name": "Notes GetLogin",
     "slug": "login-example-expo",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
     "scheme": "glnotes",
@@ -20,7 +20,10 @@
     ],
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.shadurin.glnotes"
+      "bundleIdentifier": "com.shadurin.glnotes",
+      "infoPlist": {
+        "LSApplicationQueriesSchemes": ["getlogin"]
+      }
     },
     "android": {
       "package": "com.shadurin.glnotes",

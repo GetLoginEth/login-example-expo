@@ -17,7 +17,6 @@ declare global {
 
 export type RootStackParamList = {
   Root: NavigatorScreenParams<RootTabParamList> | undefined
-  CreateNoteScreen: undefined
   NotFound: undefined
 }
 
