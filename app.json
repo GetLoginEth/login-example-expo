@@ -26,6 +26,7 @@
       }
     },
     "android": {
+      "versionCode": 2,
       "package": "com.shadurin.glnotes",
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
