@@ -2,7 +2,7 @@
   "expo": {
     "name": "Notes GetLogin",
     "slug": "login-example-expo",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
     "scheme": "glnotes",
@@ -31,6 +31,11 @@
     },
     "web": {
       "favicon": "./assets/images/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "46f03e97-6091-430e-b1fd-af3de7a4d57f"
+      }
     }
   }
 }

@@ -19,10 +19,9 @@ export interface Note {
 }
 
 // todo change before release
-export const getLoginUrl = 'https://ya.ru'
+export const getLoginUrl = 'https://apps.apple.com/tr/app/facebook/id6444726873'
 export const getLoginAuthorizeUrl = 'getlogin://dapp-authorize?applicationId=3'
 export const xDaiRpc = 'https://xdai.fairdatasociety.org'
-export const explorerUrl = 'https://blockscout.com/xdai/mainnet/tx/'
 export const notesAddress = '0xf6b270136Da7F8a2113B93a3b9Eeaf5160C45bA0'
 
 export function getUsernameHash(username: string): string {
