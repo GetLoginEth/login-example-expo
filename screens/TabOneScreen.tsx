@@ -24,6 +24,7 @@ export default function TabOneScreen({ route }: RootTabScreenProps<'TabOne'>) {
   const [logged, setLogged] = useState(false)
   const [error, setError] = useState('')
   const [status, setStatus] = useState('')
+  const [jsonRoute, setJsonRoute] = useState('')
   const [accountInfo, setAccountInfo] = useState<AccountInfo>()
   const [notes, setNotes] = useState<Note[]>([])
 
@@ -86,6 +87,7 @@ export default function TabOneScreen({ route }: RootTabScreenProps<'TabOne'>) {
     // eslint-disable-next-line @typescript-eslint/ban-ts-comment
     // @ts-ignore
     const params = route?.params?.params
+    setJsonRoute(JSON.stringify(params))
 
     if (!params) {
       return
@@ -98,6 +100,7 @@ export default function TabOneScreen({ route }: RootTabScreenProps<'TabOne'>) {
   return (
     <View style={styles.container}>
       {error && <Text style={{ color: 'red' }}>{error}</Text>}
+      {jsonRoute}
       {logged && accountInfo ? (
         <Logged
           status={status}
